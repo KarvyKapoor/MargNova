@@ -1,0 +1,2 @@
+# Data model (future persistence)
+The prototype is stateless. A production relational model can include: `location_node(id, geom, source, verified_at)`, `pedestrian_edge(id, from_node, to_node, distance_m, access_flags, source)`, `cooling_place(id, geom, type, hours, water_status, accessibility, verified_at)`, `indicator_observation(id, edge_id, indicator, value, observed_at, source, confidence)`, and `route_request(id, created_at, profile)` with privacy-minimizing retention. Avoid storing precise user movement history by default.

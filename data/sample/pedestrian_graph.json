@@ -1,0 +1,123 @@
+{
+  "dataset_note": "Illustrative synthetic graph for local demonstration only; not a verified map or safety dataset.",
+  "nodes": [
+    {
+      "id": "station",
+      "name": "Transit Hub",
+      "lat": 23.2599,
+      "lng": 77.4126,
+      "shade": 0.18
+    },
+    {
+      "id": "market",
+      "name": "Market Crossing",
+      "lat": 23.261,
+      "lng": 77.4142,
+      "shade": 0.25
+    },
+    {
+      "id": "park",
+      "name": "Central Green",
+      "lat": 23.262,
+      "lng": 77.411,
+      "shade": 0.82,
+      "cooling_name": "Central Green Rest Point"
+    },
+    {
+      "id": "library",
+      "name": "Civic Library",
+      "lat": 23.263,
+      "lng": 77.4134,
+      "shade": 0.48,
+      "cooling_name": "Civic Library (demo point)"
+    },
+    {
+      "id": "clinic",
+      "name": "Community Clinic Junction",
+      "lat": 23.2578,
+      "lng": 77.4144,
+      "shade": 0.35
+    },
+    {
+      "id": "lake",
+      "name": "Lake Walk",
+      "lat": 23.26,
+      "lng": 77.4092,
+      "shade": 0.72
+    }
+  ],
+  "edges": [
+    {
+      "from": "station",
+      "to": "market",
+      "distance_m": 210,
+      "lighting_risk": 0.25,
+      "crowd_risk": 0.55,
+      "hazard_risk": 0.15,
+      "visibility": 0.8
+    },
+    {
+      "from": "market",
+      "to": "library",
+      "distance_m": 260,
+      "lighting_risk": 0.3,
+      "crowd_risk": 0.35,
+      "hazard_risk": 0.2,
+      "visibility": 0.8
+    },
+    {
+      "from": "station",
+      "to": "clinic",
+      "distance_m": 280,
+      "lighting_risk": 0.48,
+      "crowd_risk": 0.25,
+      "hazard_risk": 0.25,
+      "visibility": 0.6
+    },
+    {
+      "from": "clinic",
+      "to": "library",
+      "distance_m": 330,
+      "lighting_risk": 0.32,
+      "crowd_risk": 0.3,
+      "hazard_risk": 0.12,
+      "visibility": 0.75
+    },
+    {
+      "from": "station",
+      "to": "park",
+      "distance_m": 390,
+      "lighting_risk": 0.38,
+      "crowd_risk": 0.18,
+      "hazard_risk": 0.1,
+      "visibility": 0.65
+    },
+    {
+      "from": "park",
+      "to": "library",
+      "distance_m": 250,
+      "lighting_risk": 0.28,
+      "crowd_risk": 0.22,
+      "hazard_risk": 0.12,
+      "visibility": 0.8
+    },
+    {
+      "from": "market",
+      "to": "lake",
+      "distance_m": 350,
+      "lighting_risk": 0.42,
+      "crowd_risk": 0.25,
+      "hazard_risk": 0.18,
+      "visibility": 0.65
+    },
+    {
+      "from": "lake",
+      "to": "park",
+      "distance_m": 310,
+      "lighting_risk": 0.35,
+      "crowd_risk": 0.15,
+      "hazard_risk": 0.12,
+      "visibility": 0.7
+    }
+  ]
+}
